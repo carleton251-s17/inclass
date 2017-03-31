@@ -1,3 +1,5 @@
+;; Examples that produce a single result, combined via magic of recursion
+
 (define test
   (lambda (a b)
     (if (equal? a b)
@@ -22,3 +24,17 @@
 
 
 ;; Test if input is a list of numbers
+
+(define list-of-numbers?
+  (lambda (lst)
+    (if (null? lst)
+        #t
+        (and (number? (car lst))
+             (list-of-numbers? (cdr lst))))))
+        
+
+(check-equal? (list-of-numbers? '(5 3 1)) #t)
+(check-equal? (list-of-numbers? '(5 a c 2)) #f)
+
+;; Problems where we construct a list of items, via magic of recursion
+
