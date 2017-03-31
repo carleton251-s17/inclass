@@ -38,3 +38,9 @@
 
 ;; Problems where we construct a list of items, via magic of recursion
 
+(define remove-first
+  (lambda (s lst)
+    lst))
+
+(check-equal? (remove-first 'a '(b a c d a)) '(b c d a))
+(check-equal? (remove-first 'b '(a c e)) '(a c e))
