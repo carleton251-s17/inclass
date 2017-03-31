@@ -47,3 +47,13 @@
     
 (check-equal? (remove-first 'a '(b a c d a)) '(b c d a))
 (check-equal? (remove-first 'b '(a c e)) '(a c e))
+
+(define nth
+  (lambda (i lst)
+    (if (equal? i 0)
+        (car lst)
+        (nth (- i 1) (cdr lst)))))
+
+(check-equal? (nth 0 '(a b c)) 'a)
+(check-equal? (nth 1 '(a b c)) 'b)
+(check-equal? (nth 2 '(a b c)) 'c)
