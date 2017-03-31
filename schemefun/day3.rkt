@@ -40,7 +40,10 @@
 
 (define remove-first
   (lambda (s lst)
-    lst))
+    (cond ( (null? lst) '() )
+          ( (equal? s (car lst)) (cdr lst))
+          ( else  (cons  (car lst)  (remove-first s (cdr lst)))))))
 
+    
 (check-equal? (remove-first 'a '(b a c d a)) '(b c d a))
 (check-equal? (remove-first 'b '(a c e)) '(a c e))
