@@ -48,12 +48,30 @@
 (check-equal? (remove-first 'a '(b a c d a)) '(b c d a))
 (check-equal? (remove-first 'b '(a c e)) '(a c e))
 
+;(define nth
+;  (lambda (i lst)
+;    (if (equal? i 0)
+;        (car lst)
+;        (nth (- i 1) (cdr lst)))))
+
 (define nth
   (lambda (i lst)
-    (if (equal? i 0)
-        (car lst)
-        (nth (- i 1) (cdr lst)))))
+    (cond ((null? lst) #f)
+          ((equal? i 0) (car lst))
+          (else (nth (- i 1) (cdr lst))))))
 
 (check-equal? (nth 0 '(a b c)) 'a)
 (check-equal? (nth 1 '(a b c)) 'b)
 (check-equal? (nth 2 '(a b c)) 'c)
+(check-equal? (nth 4 '()) #f)
+
+(define remove-all
+  (lambda (s lst)
+    (cond ( (null? lst) '() )
+          ( (equal? s (car lst)) (remove-all s (cdr lst)))
+          ( else  (cons  (car lst)  (remove-all s (cdr lst)))))))
+
+    
+(check-equal? (remove-all 'a '(b a c d a)) '(b c d))
+(check-equal? (remove-all 'b '(a c e)) '(a c e))
+
