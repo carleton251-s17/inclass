@@ -1,0 +1,9 @@
+(define list-length
+  (lambda (lst)
+    (if (null? lst)
+        0
+        (+ 1 (list-length (cdr lst))))))
+
+(list-length '(a b c))
+(list-length '(a))
+(list-length ())
