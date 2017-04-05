@@ -16,7 +16,9 @@
   (lambda (f init lst)
     (if (null? lst)
         init
-        (f (car lst) (my-foldr f init (cdr lst))))))
+        (f
+         (car lst)
+         (my-foldr f init (cdr lst))))))
 
 (define add-one
   (lambda (x)
