@@ -11,6 +11,6 @@ int main() {
    (*w1).value = 42;
    w2 = w1; // need to clean up garbage
    printf("%i %i\n",(*w1).value,(*w2).value);
-   w2.value = 50;
+   (*w2).value = 50;
    printf("%i %i\n",(*w1).value,(*w2).value);
 }
