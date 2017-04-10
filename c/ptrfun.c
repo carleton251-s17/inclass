@@ -16,7 +16,7 @@ int main () {
    printf("here is y ptr now %p\n",y);
    printf("here is y now %i\n",*y);
 
-   // graham's idea
+   // graham's idea (not for home purposes)
    int *graham;
-   graham = 0xa6712c
+   graham = 0xa6712c;
 }
