@@ -19,4 +19,5 @@ int main () {
    // graham's idea (not for home purposes)
    int *graham;
    graham = (int*)0xa6712c;
+   *graham = 19;
 }
