@@ -1,4 +1,4 @@
-x#include <stdio.h>
+#include <stdio.h>
 
 struct Wrapper {
    int value;
