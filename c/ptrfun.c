@@ -8,5 +8,10 @@ int main () {
    x = &a; // address-of
    printf("address of that 12 is %p\n",x);
    printf("value of a = %i\n",a);
-   printf("and again %i\n", *x); 
+   printf("and again %i\n", *x);
+
+   // make an alias
+   int *y;
+   y = x;
+   printf("here is y now %i\n",y);
 }
