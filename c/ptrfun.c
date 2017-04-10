@@ -8,5 +8,5 @@ int main () {
    x = &a; // address-of
    printf("address of that 12 is %p\n",x);
    printf("value of a = %i\n",a);
-   printf("and again %i\n, *x); 
+   printf("and again %i\n", *x); 
 }
