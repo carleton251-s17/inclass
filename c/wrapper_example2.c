@@ -1,5 +1,6 @@
 // Java picture in C
 #include <stdio.h>
+#include <stdlib.h>
 
 struct Wrapper {
    int value;
