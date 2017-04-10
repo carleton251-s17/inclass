@@ -13,5 +13,5 @@ int main () {
    // make an alias
    int *y;
    y = x;
-   printf("here is y now %i\n",y);
+   printf("here is y now %p\n",y);
 }
