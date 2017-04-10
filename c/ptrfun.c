@@ -15,4 +15,8 @@ int main () {
    y = x;
    printf("here is y ptr now %p\n",y);
    printf("here is y now %i\n",*y);
+
+   // graham's idea
+   int *graham;
+   graham = 0xa6712c
 }
