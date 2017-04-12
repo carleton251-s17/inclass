@@ -6,5 +6,5 @@ struct LinkedList {
 };
 
 int main() {
-   struct LinkedList *list = NULL;
+   LinkedList *list = NULL;
 }
