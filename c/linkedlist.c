@@ -26,4 +26,5 @@ void cleanupLL(LinkedList *list) {
 int main() {
    LinkedList *list = NULL;
    list = insertFrontLL(list, 3);
+   cleanupLL(list);
 }
