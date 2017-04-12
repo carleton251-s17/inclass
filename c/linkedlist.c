@@ -5,8 +5,8 @@ struct LinkedList {
    struct LinkedList *next;
 };
 
-typedef struct LinkedList davething;
+typedef struct LinkedList LinkedList;
 
 int main() {
-   davething *list = NULL;
+   LinkedList *list = NULL;
 }
