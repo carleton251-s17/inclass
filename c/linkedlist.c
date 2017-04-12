@@ -5,6 +5,8 @@ struct LinkedList {
    struct LinkedList *next;
 };
 
+typedef   struct LinkedList   LinkedList;
+
 LinkedList *insertFrontLL(LinkedList *list, int item) {
    LinkedList *cell = malloc(sizeof(LinkedList));
    (*cell).value = item;
@@ -12,8 +14,6 @@ LinkedList *insertFrontLL(LinkedList *list, int item) {
    return cell;
 }
 
-
-typedef   struct LinkedList   LinkedList;
 
 int main() {
    LinkedList *list = NULL;
