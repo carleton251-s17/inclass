@@ -14,6 +14,14 @@ LinkedList *insertFrontLL(LinkedList *list, int item) {
    return cell;
 }
 
+void cleanupLL(LinkedList *list) {
+   LinkedList *cur = list;
+   while (cur != NULL) {
+      LinkedList *follow = (*cur).next;
+      free(cur);
+      cur = follow;
+   }
+}
 
 int main() {
    LinkedList *list = NULL;
