@@ -13,8 +13,8 @@ int main() {
     word3[0] = 'b';
     printf("%s\n", word3);
 
-    /*char *word2 = "world";
+    char *word2 = "world";
     word2[0] = 'b';
-    printf("%s\n", word2);*/
+    printf("%s\n", word2);
 
 }
