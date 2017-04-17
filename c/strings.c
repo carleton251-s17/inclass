@@ -23,7 +23,10 @@ int main() {
     printf("%s\n",together);
 
     // Just for Jack
-    char *jack = "jack\0";
+    char *jack = "jack";
+    char *again = "again";
+    printf("%p\n",jack);
+    printf("%p\n",again);
     printf("%s\n",jack);
     printf("%lu\n",strlen(jack));
 
