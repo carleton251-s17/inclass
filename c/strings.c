@@ -14,7 +14,11 @@ int main() {
     printf("%s\n", word3);
 
     char *word2 = "world";
-    word2[0] = 'b';
+    //word2[0] = 'b';  SEGFAULT!
     printf("%s\n", word2);
+
+    char *together =
+       strcat("hello","world");
+    printf("%s\n",together);
 
 }
