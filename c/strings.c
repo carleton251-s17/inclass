@@ -10,6 +10,7 @@ int main() {
     //char *word3 = malloc(6*sizeof(char));
     char *word3 = calloc(6,sizeof(char));
     strcpy(word3,"weitz");
+    word3[0] = 'b';
     printf("%s\n", word3);
 
     /*char *word2 = "world";
