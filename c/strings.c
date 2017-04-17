@@ -25,7 +25,7 @@ int main() {
     // Just for Jack
     char *jack = "jack";
     printf("%s\n",jack);
-    printf("%i\n",strlen(jack));
+    printf("%lu\n",strlen(jack));
 
 
 
