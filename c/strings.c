@@ -17,8 +17,9 @@ int main() {
     //word2[0] = 'b';  SEGFAULT!
     printf("%s\n", word2);
 
-    char *together =
-       strcat("hello","world");
+    char together[50];
+    strcpy(together,"hello");
+    strcat(together,"world");
     printf("%s\n",together);
 
 }
