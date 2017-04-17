@@ -22,4 +22,12 @@ int main() {
     strcat(together,"world");
     printf("%s\n",together);
 
+    // Just for Jack
+    char *jack = "jack";
+    printf("%s\n",jack);
+    printf("%i\n",jack);
+
+
+
+
 }
