@@ -4,6 +4,7 @@
 
 int main() {
     char word1[6] = "hello";
+    word1[5] = 'q';
     printf("%s\n", word1);
 
     /* char *word2 = "world"; */
