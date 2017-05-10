@@ -7,3 +7,4 @@ def fun1():
 
 
 fun1()
+print x
