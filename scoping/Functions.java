@@ -18,5 +18,9 @@ public class Functions {
 
       evaluate(add, 5, 3);
 
+      // Java 8 lambda expression
+      Function multiply = (x,y) -> x * y;
+
+      evaluate(multiply, 5, 3);
    }
 }
