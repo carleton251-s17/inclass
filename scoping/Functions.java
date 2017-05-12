@@ -22,5 +22,6 @@ public class Functions {
       Function multiply = (x,y) -> x * y;
 
       evaluate(multiply, 5, 3);
+      evaluate( (x,y) -> x-y, 5, 3);
    }
 }
