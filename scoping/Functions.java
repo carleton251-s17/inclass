@@ -10,6 +10,12 @@ public class Functions {
 
    public static void main(String[] args) {
 
+      // anonymous inner class
+      Function add = new Function() {
+         public int f(int x, int y) {
+            return x + y;
+         }};
+
       evaluate(add, 5, 3);
 
    }
