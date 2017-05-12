@@ -6,7 +6,7 @@ public class Functions {
 
    public static void main(String[] args) {
 
-      evaluate(add, 5 3);
+      evaluate(add, 5, 3);
 
    }
 }
