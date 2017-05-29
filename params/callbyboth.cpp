@@ -8,6 +8,6 @@ void foo(int x, int &y) {
 int main() {
    int a = 5;
    int b = 4;
-   foo(a);
+   foo(a,b);
    printf("%i %i\n",a,b);
 }
