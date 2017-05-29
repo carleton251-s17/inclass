@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-void foo(int x, int call-by-ref y) {
+void foo(int x, int &y) {
    x = 6;
    y = 7;
 }
