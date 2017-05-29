@@ -15,12 +15,12 @@ def main():
     cow(z)
     print(z)
 
-    # print()
+    print()
 
-    # a = Thing()
-    # a.x = 5
-    # print(a.x)
-    # moo(a)
-    # print(a.x)
+    a = Thing()
+    a.x = 5
+    print(a.x)
+    moo(a)
+    print(a.x)
 
 main()
