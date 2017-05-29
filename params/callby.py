@@ -10,12 +10,12 @@ def moo(t):
    t.x = 7
 
 def main():
-    z = 9
-    print(z)
-    cow(z)
-    print(z)
+    # z = 9
+    # print(z)
+    # cow(z)
+    # print(z)
 
-    print()
+    # print()
 
     a = Thing()
     a.x = 5
